@@ -4,6 +4,11 @@
 
     public class Event : BaseEntity<int>
     {
+        public Event()
+        {
+            Photos = new List<Photo>();
+        }
+
         [Required]
         [MaxLength(100)]
         public string Title { get; set; }
@@ -20,5 +25,7 @@
         public string UserId { get; set; }
 
         public User User { get; set; }
+
+        public IList<Photo> Photos { get; set; }
     }
 }
