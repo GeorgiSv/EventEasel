@@ -1,0 +1,26 @@
+﻿@model EventEasel.Data.Entities.Event
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div>
+
+    <form method="post" asp-action="Create" asp-controller="Event">
+        <fieldset>
+            <legend>Create Your Event</legend>
+            <div>
+                <label for="Title">Title</label>
+                <input type="text" name="Title" value="" />
+            </div>
+            <div>
+                <label for="Description">Description</label>
+                <input type="text" name="Description" value="" />
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+        </fieldset>
+    </form>
+
+</div>
